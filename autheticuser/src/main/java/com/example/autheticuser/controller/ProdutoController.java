@@ -2,6 +2,7 @@ package com.example.autheticuser.controller;
 
 import com.example.autheticuser.model.Produto;
 import com.example.autheticuser.service.ProdutoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,6 +20,7 @@ import java.util.List;
 @RequestMapping("/api/produtos")
 @RequiredArgsConstructor
 @Tag(name = "Produtos", description = "API para gerenciamento de produtos")
+@SecurityRequirement(name = "bearerAuth")
 public class ProdutoController {
 
     private final ProdutoService produtoService;

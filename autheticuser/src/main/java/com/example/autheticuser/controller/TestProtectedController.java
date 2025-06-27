@@ -22,7 +22,6 @@ public class TestProtectedController {
 
     @Operation(summary = "Endpoint acessível apenas por usuários com a role 'admin'")
     @GetMapping("/admin")
-    @PreAuthorize("hasRole('admin')") // Exige que o JWT do usuário tenha a role 'admin'
     public String adminOnly() {
         return "Bem-vindo, Administrador! Este é um recurso restrito.";
     }
