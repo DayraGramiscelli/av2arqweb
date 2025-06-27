@@ -17,7 +17,7 @@ public class TestProtectedController {
     @Operation(summary = "Endpoint acessível por qualquer usuário autenticado")
     @GetMapping("/hello")
     public String hello() {
-        return "Olá! Você acessou um endpoint protegido com sucesso!";
+        return "Olá! Você acessou um endpoint protegido com sucesso.";
     }
 
     @Operation(summary = "Endpoint acessível apenas por usuários com a role 'admin'")
