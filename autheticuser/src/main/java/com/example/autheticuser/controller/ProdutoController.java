@@ -13,11 +13,13 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/api/produtos")
+@RequestMapping("api/produtos")
 @RequiredArgsConstructor
 @Tag(name = "Produtos", description = "API para gerenciamento de produtos")
 @SecurityRequirement(name = "bearerAuth")
