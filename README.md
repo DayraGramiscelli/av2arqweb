@@ -99,3 +99,5 @@ Name: Content-Type
 Value: application/json
 
 Visualizar resultados: Clique direito em Thread Group > Add > Listener > View Results Tree
+
+deploy: av2arqweb-production.up.railway.app/
